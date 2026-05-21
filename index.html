@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>La Locanda del Monte — Cucina ligure sopra Genova</title>
+  <meta name="description" content="La Locanda del Monte: cucina ligure e vista panoramica a 180° su Genova e il mare, accanto al Santuario di Nostra Signora del Monte. Aperitivi al tramonto, cerimonie, menù del giorno."/>
+  <!-- OG / Twitter -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="La Locanda del Monte"/>
+  <meta property="og:title" content="La Locanda del Monte — Cucina ligure sopra Genova"/>
+  <meta property="og:description" content="Cucina ligure e vista a 180° su Genova. Aperitivi al tramonto sul sagrato. Menù del giorno secondo il mercato."/>
+  <meta property="og:image" content="assets/og-image.jpg"/>
+  <meta property="og:url" content="https://lalocandadelmonte.it/"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="La Locanda del Monte — Cucina ligure sopra Genova"/>
+  <meta name="twitter:description" content="Cucina ligure e vista a 180° su Genova e il mare."/>
+  <meta name="twitter:image" content="assets/og-image.jpg"/>
+  <!-- Canonical -->
+  <link rel="canonical" href="https://lalocandadelmonte.it/"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"Restaurant",
+    "name":"La Locanda del Monte",
+    "description":"Ristorante di cucina ligure con vista panoramica a 180° su Genova e il mare, accanto al Santuario di Nostra Signora del Monte.",
+    "url":"https://lalocandadelmonte.it",
+    "telephone":"+390104044678",
+    "email":"lalocandadelmonte@gmail.com",
+    "address":{"@type":"PostalAddress","streetAddress":"Salita Nuova di Nostra Signora del Monte 13","addressLocality":"Genova","addressRegion":"GE","postalCode":"16143","addressCountry":"IT"},
+    "geo":{"@type":"GeoCoordinates","latitude":44.4126501,"longitude":8.9633279},
+    "servesCuisine":["Cucina Ligure","Italiana"],
+    "priceRange":"€€",
+    "image":"https://lalocandadelmonte.it/assets/og-image.jpg",
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","reviewCount":"850","bestRating":"5"},
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday","Friday"],"opens":"18:30","closes":"23:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"12:00","closes":"15:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"18:30","closes":"23:00"}
+    ],
+    "amenityFeature":[
+      {"@type":"LocationFeatureSpecification","name":"Outdoor seating","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Private parking","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Children play area","value":true}
+    ]
+  }
+  </script>
+</head>
+<body data-page="home">
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <svg class="preloader__icon" viewBox="0 0 64 64" width="72" height="72">
+    <path class="preloader__path-1" d="M32 5 L54 28 L54 59 L10 59 L10 28 Z" fill="none" stroke="#BC5836" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="preloader__path-2" d="M32 16 L32 42 M21 26 L43 26" stroke="#DC9A37" stroke-width="2.5" stroke-linecap="round"/>
+  </svg>
+  <span class="preloader__name">La Locanda del Monte</span>
+  <span class="preloader__sub">Genova · San Fruttuoso</span>
+</div>
+
+<!-- NAV OVERLAY (mobile) -->
+<div id="navOverlay" style="display:none;position:fixed;inset:0;z-index:98;background:rgba(0,0,0,.35)"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="index.html" class="nav__brand">
+    <span class="nav__mark"><svg viewBox="0 0 32 32" width="26" height="26"><path d="M16 2L26 13L26 30L6 30L6 13Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M16 7L16 22M11 12L21 12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="16" cy="26" r="1.7" fill="currentColor"/></svg></span>
+    <span class="nav__name">La Locanda<em>del Monte</em></span>
+  </a>
+  <nav class="nav__links" id="navLinks">
+    <a href="index.html" data-page="home">La Locanda</a>
+    <a href="menu.html" data-page="menu">Menù</a>
+    <a href="galleria.html" data-page="galleria">Galleria</a>
+    <a href="eventi.html" data-page="eventi">Eventi</a>
+    <a href="prenota.html" data-page="prenota" class="nav__cta">Prenota</a>
+  </nav>
+  <button class="nav__burger" id="navBurger" aria-label="Menù" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/393927000728?text=Ciao!%20Vorrei%20prenotare%20un%20tavolo%20alla%20Locanda%20del%20Monte." target="_blank" rel="noopener noreferrer" aria-label="Scrivici su WhatsApp">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2.003A9.998 9.998 0 002 12.001c0 1.763.463 3.456 1.344 4.942L2 22l5.227-1.314A9.996 9.996 0 0012.004 22C17.524 22 22 17.523 22 12.001A9.998 9.998 0 0012.004 2.003zm0 18.214a8.217 8.217 0 01-4.19-1.146l-.3-.178-3.103.779.818-2.972-.195-.305a8.213 8.213 0 01-1.254-4.395c0-4.538 3.694-8.23 8.231-8.23 4.536 0 8.229 3.692 8.229 8.23 0 4.537-3.693 8.217-8.236 8.217z"/></svg>
+  <span class="wa-float__label">Scrivici</span>
+</a>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie policy">
+  <p>Questo sito usa Google Maps che può impostare cookie di terze parti. <a href="privacy.html">Privacy policy</a>.</p>
+  <div class="cookie-banner__btns">
+    <button class="cookie-btn cookie-btn--accept" id="cookieAccept">Accetta</button>
+    <button class="cookie-btn cookie-btn--reject" id="cookieReject">Solo necessari</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__sky"></div>
+  <div class="hero__sun" aria-hidden="true"></div>
+  <div class="hero__grain" aria-hidden="true"></div>
+  <svg class="hero__scene" viewBox="0 0 1440 620" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <g class="scene-layer" data-depth="5"><path d="M0 468 Q240 380 460 428 T940 408 T1440 448 L1440 620 L0 620Z" fill="#7e8385" opacity=".3"/></g>
+    <g class="scene-layer" data-depth="3"><path d="M0 480 Q360 468 720 478 T1440 476 L1440 620 L0 620Z" fill="#3d5a63" opacity=".6"/><path d="M0 480 Q360 468 720 478 T1440 476" fill="none" stroke="#e9b25c" stroke-width="2.5" opacity=".45"/></g>
+    <g class="scene-layer" data-depth="12">
+      <g fill="#9a4f33" opacity=".92"><rect x="50" y="500" width="68" height="120"/><rect x="130" y="476" width="56" height="144"/><rect x="200" y="512" width="78" height="108"/><rect x="292" y="488" width="60" height="132"/><rect x="365" y="520" width="90" height="100"/><rect x="468" y="496" width="64" height="124"/><rect x="550" y="524" width="76" height="96"/><rect x="976" y="514" width="82" height="106"/><rect x="1074" y="492" width="58" height="128"/><rect x="1146" y="518" width="94" height="102"/><rect x="1254" y="498" width="62" height="122"/><rect x="1330" y="520" width="84" height="100"/></g>
+      <g fill="#bd6a44" opacity=".95"><path d="M50 500l34-25 34 25Z"/><path d="M130 476l28-21 28 21Z"/><path d="M292 488l30-23 30 23Z"/><path d="M468 496l32-24 32 24Z"/><path d="M1074 492l29-22 29 22Z"/><path d="M1254 498l31-24 31 24Z"/></g>
+      <g fill="#f4c25e" opacity=".82"><rect x="148" y="498" width="9" height="13"/><rect x="166" y="498" width="9" height="13"/><rect x="148" y="526" width="9" height="13"/><rect x="166" y="526" width="9" height="13"/><rect x="308" y="510" width="9" height="13"/><rect x="326" y="510" width="9" height="13"/><rect x="1090" y="514" width="9" height="13"/><rect x="1108" y="514" width="9" height="13"/><rect x="1270" y="520" width="9" height="13"/><rect x="1288" y="520" width="9" height="13"/></g>
+    </g>
+    <g class="scene-layer" data-depth="17">
+      <rect x="645" y="422" width="192" height="198" fill="#f0e4c8"/><path d="M645 422L741 358L837 422Z" fill="#d8c79e"/>
+      <rect x="837" y="318" width="60" height="302" fill="#ead9b4"/><path d="M837 318L867 284L897 318Z" fill="#9a4f33"/>
+      <rect x="851" y="354" width="32" height="46" rx="16" fill="#2f2a22"/><rect x="851" y="414" width="32" height="46" rx="16" fill="#2f2a22"/>
+      <line x1="867" y1="284" x2="867" y2="262" stroke="#2f2a22" stroke-width="3.5"/><line x1="857" y1="274" x2="877" y2="274" stroke="#2f2a22" stroke-width="3.5"/>
+      <circle cx="741" cy="434" r="18" fill="none" stroke="#bd6a44" stroke-width="3.5"/><path d="M714 560q27-54 54 0Z" fill="#7d4129"/>
+      <rect x="666" y="468" width="21" height="42" rx="10.5" fill="#caa873"/><rect x="795" y="468" width="21" height="42" rx="10.5" fill="#caa873"/>
+    </g>
+    <g class="scene-layer" data-depth="27"><path d="M100 620q-8-122 6-152q72 36 98 72q-44-8-62 4q42 12 58 32q-52-2-100 44Z" fill="#303d2a"/><path d="M1340 620q8-112-6-142q-66 32-90 66q40-6 58 6q-40 12-54 28q48 0 92 42Z" fill="#303d2a"/></g>
+  </svg>
+  <div class="hero__inner">
+    <p class="hero__eyebrow" data-anim="1">Genova · Santuario di Nostra Signora del Monte</p>
+    <h1 class="hero__title"><span data-anim="2">Cucina ligure</span><span data-anim="3"><em>sospesa</em> sopra la città</span></h1>
+    <p class="hero__lead" data-anim="4">Un balcone a 180° su Genova e sul mare. Piatti del giorno secondo il mercato, aperitivo al tramonto sul sagrato, la calma della collina.</p>
+    <div class="hero__actions" data-anim="5">
+      <a href="prenota.html" class="btn btn--solid">Prenota un tavolo</a>
+      <a href="menu.html" class="btn btn--ghost">Scopri il menù</a>
+    </div>
+    <div class="hero__meta" data-anim="6">
+      <span class="stars" aria-label="4,4 stelle su 5">★★★★<span class="stars__half">★</span></span>
+      <span>4,4 · oltre 850 recensioni Google</span>
+    </div>
+  </div>
+  <a href="#locanda" class="hero__scroll" aria-label="Scorri"><span></span></a>
+</section>
+
+<!-- LA LOCANDA -->
+<section class="story" id="locanda">
+  <div class="story__grid container">
+    <div class="story__text reveal">
+      <p class="kicker">La Locanda</p>
+      <h2>Si sale per le creuze, e la città resta sotto.</h2>
+      <p>La Locanda del Monte vive accanto al Santuario di Nostra Signora del Monte, dove il quartiere di San Fruttuoso lascia spazio agli ulivi e al silenzio. La strada è ripida e stretta — chi conosce Genova lo sa — ma in cima aspetta una sala con vista sul mare.</p>
+      <p>Gestita da fratello e sorella con la stessa cura di una casa, la Locanda propone un menù che si riscrive ogni giorno: pochi piatti, scelti sul mercato, di terra e di mare.</p>
+      <ul class="story__points">
+        <li><strong>Cucina ligure</strong> · menù del giorno secondo stagione</li>
+        <li><strong>Vista 180°</strong> · città, mare e collina dalla stessa sala</li>
+        <li><strong>Per le famiglie</strong> · area gioco in stile montessoriano</li>
+        <li><strong>Parcheggio privato</strong> · aperitivo all'aperto sul sagrato</li>
+      </ul>
+    </div>
+    <figure class="story__quote reveal" style="--d:.1s">
+      <div class="photo-slot photo--interior" role="img" aria-label="Sala interna della Locanda" loading="lazy"></div>
+      <blockquote>"Vista spettacolare da qualunque parte volgi lo sguardo. La sala gode di un panorama a 180° sulla città e sul mare."<cite>— dalla voce degli ospiti</cite></blockquote>
+    </figure>
+  </div>
+</section>
+
+<!-- PANORAMA BAND -->
+<section class="panorama" id="panorama">
+  <div class="panorama__sky" aria-hidden="true"></div>
+  <svg class="panorama__ridge" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 200L0 118Q220 58 460 94T920 78T1440 108L1440 200Z" fill="currentColor"/></svg>
+  <div class="panorama__inner reveal">
+    <p class="kicker kicker--light">Il Panorama</p>
+    <h2>L'ora d'oro è il piatto forte.</h2>
+    <p class="panorama__lead">Quando il sole scende dietro Genova, il sagrato del Santuario diventa il posto migliore della città per un aperitivo. In estate si cena all'aperto con il porto che si accende lentamente in lontananza.</p>
+    <div class="panorama__stats">
+      <div><span class="num">180°</span><span class="lbl">vista su città e mare</span></div>
+      <div><span class="num">350<small>m</small></span><span class="lbl">sopra il livello del mare</span></div>
+      <div><span class="num">1850</span><span class="lbl">anno del Santuario</span></div>
+    </div>
+  </div>
+  <svg class="panorama__ridge panorama__ridge--bottom" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0L0 90Q360 160 720 120T1440 100L1440 0Z" fill="currentColor"/></svg>
+</section>
+
+<!-- SUNSET WIDGET -->
+<section class="sunset" id="tramonto">
+  <div class="sunset__sun" aria-hidden="true"></div>
+  <div class="sunset__inner">
+    <span class="sunset__label">Tramonto di oggi a Genova</span>
+    <div class="sunset__time" aria-live="polite"><span id="sunsetTime">--:--</span><span class="sunset__ampm">ora locale</span></div>
+    <p class="sunset__sub" id="sunsetSub">Prenota il tuo aperitivo sul sagrato.</p>
+    <a href="prenota.html" class="btn btn--gold">Prenota l'aperitivo</a>
+    <p class="sunset__note">Calcolato in tempo reale per le coordinate di Genova (44°N)</p>
+  </div>
+</section>
+
+<!-- RECENSIONI TICKER -->
+<section class="reviews" id="recensioni">
+  <div class="reviews__head container reveal">
+    <p class="kicker">Cosa dicono gli ospiti</p>
+    <h2>Oltre 850 recensioni.<br/><em style="font-weight:380;font-style:italic">Tutte vere.</em></h2>
+  </div>
+  <div class="ticker-wrap" aria-label="Carosello recensioni">
+    <div class="ticker-track">
+      <!-- CARD SET 1 -->
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Vista panoramica su Genova straordinaria. Cibo buonissimo e ben presentato. Servizio eccellente, prezzi onestissimi."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Posto incredibile — non si trova di meglio a Genova per vista e cucina. Menù che cambia ogni giorno, atmosfera genuina."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Il cibo, il vino e tutta l'atmosfera erano magici. Staff gentilissimo e molto disponibile. Assolutamente da consigliare!"</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Location stupenda vicino al Santuario. La vista al tramonto vale ogni sforzo di salire. Ottimo vino con abbinamenti perfetti."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Chef giovane e appassionato, team professionale, accoglienza calorosa. Cucina del territorio con qualche bella sorpresa."</p><footer class="review-card__meta"><span></span>Google · maggio 2025</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Il matrimonio più bello che potevo immaginare. Menù costruito insieme, aperitivo sul sagrato con il tramonto come sfondo."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Cucina tipica genovese eccellente. Ravioli di magro e fritto leggero come piuma. Personale di una gentilezza davvero rara."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Vista a 180° su Genova e il mare dalla stessa sala. Un posto che vale ogni sforzo di salire le creuze."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <!-- CARD SET 2 (duplicato per loop seamless) -->
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Vista panoramica su Genova straordinaria. Cibo buonissimo e ben presentato. Servizio eccellente, prezzi onestissimi."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Posto incredibile — non si trova di meglio a Genova per vista e cucina. Menù che cambia ogni giorno, atmosfera genuina."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Il cibo, il vino e tutta l'atmosfera erano magici. Staff gentilissimo e molto disponibile. Assolutamente da consigliare!"</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Location stupenda vicino al Santuario. La vista al tramonto vale ogni sforzo di salire. Ottimo vino con abbinamenti perfetti."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Chef giovane e appassionato, team professionale, accoglienza calorosa. Cucina del territorio con qualche bella sorpresa."</p><footer class="review-card__meta"><span></span>Google · maggio 2025</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Il matrimonio più bello che potevo immaginare. Menù costruito insieme, aperitivo sul sagrato con il tramonto come sfondo."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Cucina tipica genovese eccellente. Ravioli di magro e fritto leggero come piuma. Personale di una gentilezza davvero rara."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+      <article class="review-card"><div class="review-card__stars">★★★★★</div><p class="review-card__text">"Vista a 180° su Genova e il mare dalla stessa sala. Un posto che vale ogni sforzo di salire le creuze."</p><footer class="review-card__meta"><span></span>Google · 5 stelle</footer></article>
+    </div>
+  </div>
+  <div class="reviews__footer container">
+    <div class="reviews__total"><em>4,4</em> / 5</div>
+    <div><div class="stars" aria-hidden="true">★★★★<span class="stars__half">★</span></div><div class="reviews__src">850+ recensioni su Google</div></div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="container reveal">
+    <p class="kicker" style="text-align:center">Scopri di più</p>
+    <h2>Tutto quello che c'è alla Locanda.</h2>
+    <p style="text-align:center">Dalla cucina ligure agli eventi, dalla galleria di foto alla prenotazione online.</p>
+    <div class="cta-band__btns">
+      <a href="menu.html" class="btn btn--solid">Il menù di oggi</a>
+      <a href="galleria.html" class="btn btn--ghost" style="color:var(--ink);border-color:rgba(34,28,18,.3)">La galleria</a>
+      <a href="prenota.html" class="btn btn--ghost" style="color:var(--ink);border-color:rgba(34,28,18,.3)">Prenota</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__name nav__name--lg">La Locanda<em>del Monte</em></span>
+      <p>Cucina ligure e panorama a 180° accanto al Santuario di Nostra Signora del Monte, Genova.</p>
+    </div>
+    <nav class="footer__nav"><a href="index.html">La Locanda</a><a href="menu.html">Il Menù</a><a href="galleria.html">Galleria</a><a href="eventi.html">Eventi</a><a href="prenota.html">Prenota</a></nav>
+    <div class="footer__contact"><a href="tel:+390104044678">+39 010 404 4678</a><a href="mailto:lalocandadelmonte@gmail.com">lalocandadelmonte@gmail.com</a><span>Salita N.S. del Monte 13 — Genova</span></div>
+  </div>
+  <div class="footer__base"><span>© <span id="year"></span> La Locanda del Monte</span><span>Cucina ligure · Cerimonie · Aperitivi al tramonto</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

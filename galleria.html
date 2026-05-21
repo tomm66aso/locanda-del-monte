@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Galleria — La Locanda del Monte</title>
+  <meta name="description" content="Galleria fotografica della Locanda del Monte: il panorama di Genova, la cucina ligure, il sagrato del Santuario, la sala e gli eventi."/>
+  <meta property="og:title" content="Galleria — La Locanda del Monte"/><meta property="og:image" content="assets/og-image.jpg"/><meta property="og:url" content="https://lalocandadelmonte.it/galleria.html"/>
+  <link rel="canonical" href="https://lalocandadelmonte.it/galleria.html"/>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body data-page="galleria">
+<div class="preloader" id="preloader" aria-hidden="true"><svg class="preloader__icon" viewBox="0 0 64 64" width="72" height="72"><path class="preloader__path-1" d="M32 5L54 28L54 59L10 59L10 28Z" fill="none" stroke="#BC5836" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path class="preloader__path-2" d="M32 16L32 42M21 26L43 26" stroke="#DC9A37" stroke-width="2.5" stroke-linecap="round"/></svg><span class="preloader__name">La Locanda del Monte</span><span class="preloader__sub">Genova · San Fruttuoso</span></div>
+<div id="navOverlay" style="display:none;position:fixed;inset:0;z-index:98;background:rgba(0,0,0,.35)"></div>
+<header class="nav nav--solid" id="nav">
+  <a href="index.html" class="nav__brand"><span class="nav__mark"><svg viewBox="0 0 32 32" width="26" height="26"><path d="M16 2L26 13L26 30L6 30L6 13Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M16 7L16 22M11 12L21 12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="16" cy="26" r="1.7" fill="currentColor"/></svg></span><span class="nav__name">La Locanda<em>del Monte</em></span></a>
+  <nav class="nav__links" id="navLinks"><a href="index.html" data-page="home">La Locanda</a><a href="menu.html" data-page="menu">Menù</a><a href="galleria.html" data-page="galleria">Galleria</a><a href="eventi.html" data-page="eventi">Eventi</a><a href="prenota.html" data-page="prenota" class="nav__cta">Prenota</a></nav>
+  <button class="nav__burger" id="navBurger" aria-label="Menù" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<a class="wa-float" href="https://wa.me/393927000728?text=Ciao!%20Vorrei%20prenotare%20un%20tavolo%20alla%20Locanda%20del%20Monte." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2.003A9.998 9.998 0 002 12.001c0 1.763.463 3.456 1.344 4.942L2 22l5.227-1.314A9.996 9.996 0 0012.004 22C17.524 22 22 17.523 22 12.001A9.998 9.998 0 0012.004 2.003zm0 18.214a8.217 8.217 0 01-4.19-1.146l-.3-.178-3.103.779.818-2.972-.195-.305a8.213 8.213 0 01-1.254-4.395c0-4.538 3.694-8.23 8.231-8.23 4.536 0 8.229 3.692 8.229 8.23 0 4.537-3.693 8.217-8.236 8.217z"/></svg><span class="wa-float__label">Scrivici</span></a>
+<div class="cookie-banner" id="cookieBanner"><p>Questo sito usa Google Maps che può impostare cookie di terze parti. <a href="privacy.html">Privacy policy</a>.</p><div class="cookie-banner__btns"><button class="cookie-btn cookie-btn--accept" id="cookieAccept">Accetta</button><button class="cookie-btn cookie-btn--reject" id="cookieReject">Solo necessari</button></div></div>
+
+<section class="page-hero page-hero--galleria">
+  <div class="page-hero__grain" aria-hidden="true"></div>
+  <div class="page-hero__inner container"><a class="page-hero__back" href="index.html">← La Locanda</a><p class="kicker kicker--light">Un assaggio visivo</p><h1>La Galleria</h1><p>Il panorama, la cucina, il sagrato. Tutto quello che rende la Locanda unica.</p></div>
+</section>
+
+<section class="gallery gallery-full" style="padding-top:clamp(3rem,6vw,5rem)">
+  <div class="container">
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--wide reveal"><div class="photo-slot photo--view" role="img" aria-label="Panorama di Genova dal ristorante" loading="lazy"><span class="photo-tag">Vista 180° su Genova</span></div></div>
+      <div class="gallery__item reveal" style="--d:.06s"><div class="photo-slot photo--food1" role="img" aria-label="Trenette al pesto genovese" loading="lazy"><span class="photo-tag">Trenette al pesto</span></div></div>
+      <div class="gallery__item gallery__item--tall reveal" style="--d:.12s"><div class="photo-slot photo--sala" role="img" aria-label="La sala della Locanda" loading="lazy"><span class="photo-tag">La sala</span></div></div>
+      <div class="gallery__item reveal" style="--d:.06s"><div class="photo-slot photo--food2" role="img" aria-label="Fritto di paranza" loading="lazy"><span class="photo-tag">Fritto di paranza</span></div></div>
+      <div class="gallery__item reveal" style="--d:.12s"><div class="photo-slot photo--outdoor" role="img" aria-label="Aperitivo sul sagrato" loading="lazy"><span class="photo-tag">Aperitivo sul sagrato</span></div></div>
+      <div class="gallery__item reveal" style="--d:.18s"><div class="photo-slot photo--wine" role="img" aria-label="Selezione vini" loading="lazy"><span class="photo-tag">La carta dei vini</span></div></div>
+      <div class="gallery__item gallery__item--wide reveal" style="--d:.06s"><div class="photo-slot photo--event" role="img" aria-label="Tavola allestita per cerimonia" loading="lazy"><span class="photo-tag">Cerimonie &amp; eventi</span></div></div>
+      <div class="gallery__item reveal" style="--d:.12s"><div class="photo-slot photo--dolce" role="img" aria-label="I dolci" loading="lazy"><span class="photo-tag">I dolci</span></div></div>
+      <div class="gallery__item reveal" style="--d:.18s"><div class="photo-slot photo--interior" role="img" aria-label="Interno della Locanda" loading="lazy"><span class="photo-tag">Atmosfera</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band" style="margin-top:clamp(3rem,6vw,5rem)">
+  <div class="container reveal"><h2>Vieni a vederla dal vivo.</h2><p style="text-align:center">Nessuna foto rende giustizia alla vista reale. Prenota un tavolo.</p><div class="cta-band__btns"><a href="prenota.html" class="btn btn--solid">Prenota un tavolo</a><a href="eventi.html" class="btn btn--ghost" style="color:var(--ink);border-color:rgba(34,28,18,.3)">Organizza un evento</a></div></div>
+</div>
+
+<footer class="footer">
+  <div class="footer__inner"><div class="footer__brand"><span class="nav__name nav__name--lg">La Locanda<em>del Monte</em></span><p>Cucina ligure e panorama a 180° accanto al Santuario di Nostra Signora del Monte, Genova.</p></div><nav class="footer__nav"><a href="index.html">La Locanda</a><a href="menu.html">Il Menù</a><a href="galleria.html">Galleria</a><a href="eventi.html">Eventi</a><a href="prenota.html">Prenota</a></nav><div class="footer__contact"><a href="tel:+390104044678">+39 010 404 4678</a><a href="mailto:lalocandadelmonte@gmail.com">lalocandadelmonte@gmail.com</a><span>Salita N.S. del Monte 13 — Genova</span></div></div>
+  <div class="footer__base"><span>© <span id="year"></span> La Locanda del Monte</span><span>Cucina ligure · Cerimonie · Aperitivi al tramonto</span></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
